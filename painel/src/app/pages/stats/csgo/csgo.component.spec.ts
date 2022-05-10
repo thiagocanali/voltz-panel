@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LogsValorantComponent } from './logs-valorant.component';
+import { CsgoComponent } from './csgo.component';
 
-describe('LogsValorantComponent', () => {
-  let component: LogsValorantComponent;
-  let fixture: ComponentFixture<LogsValorantComponent>;
+describe('CsgoComponent', () => {
+  let component: CsgoComponent;
+  let fixture: ComponentFixture<CsgoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LogsValorantComponent ]
+      declarations: [ CsgoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LogsValorantComponent);
+    fixture = TestBed.createComponent(CsgoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

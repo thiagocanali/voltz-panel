@@ -1,0 +1,26 @@
+<div class="content" role="main">
+
+    <!-- Next Steps -->
+    <h2> Tem algo pra mim? </h2>
+    <p>Clique no botão abaixo:</p>
+
+    <input type="hidden" #selection>
+
+    <div class="card-container">
+        <!-- *ngFor="let i of items" -->
+        <div class="card" (click)="mandaOutra()" tabindex="0">
+            <span>{{mensagemNaGarrafa}}</span>
+        </div>
+    </div>
+
+    <!-- Terminal -->
+    <!-- <div class="terminal" [ngSwitch]="selection.value">
+        <pre *ngSwitchDefault>ng generate component xyz</pre>
+        <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+        <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
+        <pre *ngSwitchCase="'dependency'">ng add _____</pre>
+        <pre *ngSwitchCase="'test'">ng test</pre>
+        <pre *ngSwitchCase="'build'">ng build</pre>
+    </div> -->
+
+</div>
