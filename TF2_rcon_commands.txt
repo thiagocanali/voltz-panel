@@ -1,0 +1,107 @@
+“Enable Developer Console”
+
+Controlling the Server
+To control a server you are currently in:
+rcon_password PASSWORD
+
+To control server you are not currently playing in:
+rcon_address IPADDRESS:PORT
+Example:
+rcon_address 72.172.128.4:27015
+
+MAPS
+To find out what maps are available on your server:
+rcon maps *
+
+Map types include arena, control point (cp), capture the flag (ctf), payload (pl), king of the hill (koth), and territory control (tc.
+
+List of Maps for TF2:
+• arena_badlands
+• arena_granary
+• arena_lumberyard
+• arena_nucleus
+• arena_offblast_final
+• arena_ravine
+• arena_sawmill
+• arena_watchtower
+• arena_well
+• cp_badlands
+• cp_dustbowl
+• cp_egypt_final
+• cp_fastlane
+• cp_gorge
+• cp_granary
+• cp_gravelpit
+• cp_junction_final
+• cp_steel
+• cp_well
+• cp_yukon_final
+• ctf_2fort
+• ctf_doublecross
+• ctf_sawmill
+• ctf_turbine
+• ctf_well
+• koth_harvest_event
+• koth_harvest_final
+• koth_nucleus
+• koth_sawmill
+• koth_viaduct
+• pl_badwater
+• pl_goldrush
+• pl_hoodoo_final
+• plr_pipeline
+• tc_hydro
+• pl_swiftwater
+
+To change the current map:
+rcon changelevel MAPNAME
+Example:
+rcon changelevel ctf_2fort
+
+Communication
+
+This will show a message in the chat window
+rcon say “Type Message Here”
+To enable (1) or disable (0) voice on the server
+rcon sv_voiceenable 1
+To enable (1) or disable (0) all talk on the server (Both teams can talk with each other)
+rcon sv_alltalk 1
+
+
+Banning/Kicking
+
+To show the users currently on the server
+rcon users
+To add an IP to the ban list
+rcon addip
+To add ban an ID from the server
+rcon banid
+To kick a user from the server
+rcon kick
+To remove an user ID from the ban list
+rcon removeid
+To remove an user IP from the IP ban list
+rcon removeip
+To remove an user IP from the IP ban list
+rcon removeip
+
+Game Options
+
+Reboot the server and which also kicks everyone in it
+rcon quit
+Turning friendly fire on (1) or off (0)
+rcon mp_friendlyfire 0
+To turn respawn times on (1) or default is off (0)
+rcon mp_disable_respawn_times 1
+Sets the timelimit of the current map to 40 minutes. (unless maxrounds or winlimit is reached first)
+rcon mp_timelimit 40
+A team must win 4 rounds to end the map. (unless timelimit or maxrounds is reached first)
+rcon mp_winlimit 4
+Map ends when 5 rounds have been reached (unless winlimit or timelimit is reached first)
+rcon mp_maxrounds 5
+Randomize or Scramble the teams
+rcon mp_scrambleteams
+Restart the Game in seconds
+rcon mp_restartgame 15
+Turns crits off(0) (defaults to on (1)
+rcon tf_weapon_criticals 0
